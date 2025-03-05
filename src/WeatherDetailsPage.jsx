@@ -1,17 +1,27 @@
-import "./WeatherDetailsPage.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-function WeatherDetailsPage() {
+const WeatherDetailsPage = () => {
   const location = useLocation();
-  const navigate = useNavigate();
-  const { title, value, unit } = location.state || {};
+  const { title, value, unit } = location.state || { title: "", value: "", unit: "" };
 
   return (
     <div className="details-page">
-      <h2>{title} Details</h2>
-      <p> {value} {unit} </p>
-      <button onClick={() => navigate("/")}>Go Back</button>
+      <h2>{title}</h2>
+      <p>
+        {value} {unit}
+      </p>
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<WeatherApp />} />
+        <Route path="/details" element={<WeatherDetailsPage />} />
+      </Routes>
+    </Router>
   );
 }
 

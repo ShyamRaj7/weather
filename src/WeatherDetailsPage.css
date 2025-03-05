@@ -1,51 +1,93 @@
-/* Center the page content */
 .details-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full screen height */
-    background: linear-gradient(to bottom, #fe4f4f, #000000); /* Blue gradient */
-    color: white;
-    font-family: "Times New Roman", sans-serif;
-    text-align: center;
+  /* Making the page container take up most of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #fe4f4f, #000000);
+  width: 80%;
+  max-width: 900px; /* Adjust this to fit the desired screen size */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0; /* You can change the background color */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.details-page h2 {
+  font-size: 2rem; /* Larger font size */
+  margin-bottom: 20px;
+}
+
+.details-page p {
+  font-size: 1.5rem; /* Increase text size */
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.details-page button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.details-page button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .details-page {
+    width: 95%; /* On smaller screens, take up more width */
+    padding: 15px;
   }
-  
-  /* Title Styling */
+
   .details-page h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
   }
-  
-  /* Data Display */
+
   .details-page p {
-    font-size: 24px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px 25px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
+    font-size: 1.2rem;
   }
-  
-  /* Go Back Button */
+
   .details-page button {
-    background: white;
-    color: #007bff;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 1rem;
   }
-  
-  .details-page button:hover {
-    background: #007bff;
-    color: white;
-    transform: scale(1.05);
-  }
-  
+}
+
+/* App.css */
+.details-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.details-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.detail {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.detail p {
+  font-size: 18px;
+  color: #555;
+}

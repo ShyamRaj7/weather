@@ -132,3 +132,47 @@ img{
 .copyright span{
     color: #333;
 }
+/* App.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .settings-icon {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .settings-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .settings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .settings-content label {
+    margin-top: 10px;
+  }
+/* App.css */
+.data-container .element {
+    cursor: pointer;
+  }
+  
+  .humidity-percent,
+  .wind-percent {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
