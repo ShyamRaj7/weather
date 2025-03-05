@@ -1,0 +1,51 @@
+/* Center the page content */
+.details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    background: linear-gradient(to bottom, #fe4f4f, #000000); /* Blue gradient */
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .details-page h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Data Display */
+  .details-page p {
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  
+  /* Go Back Button */
+  .details-page button {
+    background: white;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .details-page button:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+  }
+  
